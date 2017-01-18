@@ -25,7 +25,12 @@ var DRIVY = DRIVY || {};
 
     var actors = DRIVY.payActors(car, begin, end, distance, option);
 
-    render(actors);
+    if (car != "" && begin != 0 && end != 0 && distance != 0){
+      render(actors);
+    }
+    else{
+      alert("Answer all the informations");
+    }
 
     return;
   });

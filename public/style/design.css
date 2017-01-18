@@ -1,0 +1,73 @@
+body{
+	height:100%;
+	width: 100%;
+	/*float: left;*/
+	background-color: #E6F6FA;
+	font-family: "resultFont";
+	font-size: 100%;
+}
+
+#dataContainer, #actors {
+	padding: 1%;
+	margin-left: 5%;
+	width: 30%;
+	background-color: #bbcce8;
+	border-radius: 3px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #06152d;
+}
+
+#dataContainer {
+	font-family: "askFont";
+}
+
+@font-face {
+	font-family: "askFont";
+	src: url('font/Bellerose.ttf');
+}
+
+@font-face {
+	font-family: "resultFont";
+	src: url('font/Squares_Bold_Free.otf');
+}
+
+button{
+	font-size: 110%;
+	font-weight: bold;
+	display:block;
+	height: 30px;
+	background-color: #93bcff;
+	border: 1px solid #06152d;
+	color: white;
+	margin-left: 5%;
+	width: 32%;
+}
+	
+button:hover{
+	background-color: #98a6bc;
+	color: white;
+}
+
+input{
+	margin-top: 20px;
+	float: right;
+	width: 50%;
+}
+
+input.option{
+	margin-top: -15px;
+}
+
+input:hover{
+	background-color: #dee3ea;
+}
+input:focus{
+	background-color: #edeff2;
+}
+
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}

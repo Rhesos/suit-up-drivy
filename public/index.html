@@ -2,28 +2,34 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Drivy</title>
+    <link href='style/design.css' rel='stylesheet' type='text/css'/>
   </head>
   <body>
+    <h2>Enter the following informations :</h2>
+    <div id="dataContainer">
     <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
+      What is the car model ?<input class="model" type="text" placeholder="Car model"/><br/><br/>
+      How much €/pay ?<input class="price-by-day" type="number" placeholder="Price by day"/><br/><br/>
+      How much €/km ?<input class="price-by-km" type="number" placeholder="Price by km"/><br/><br/>
     </div>
     <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+      When do you rent the car ?<input class="begin" type="date" placeholder="Rental begin date"/><br/><br/>
+      When are you done with it ?<input class="end" type="date" placeholder="Rental end date"/><br/><br/>
+      How many km did you drive ?<input class="distance" type="number" placeholder="Distance in km"/><br/><br/>
+      Do you take the deductible option ?<input class="option" type="checkbox" placeholder="Deductible option"/></br></br>
     </div>
+  </div>
     <button id="compute">Compute</button>
     <div id="actors"></div>
     <script id="template" type="x-tmpl-mustache">
+    </br>
       {{#actors}}
         <div class="actor">
-          <span>{{who}}</span>
-          <span>{{type}}</span>
-          <span>{{amount}}</span>
+          <span>{{who}} : </span>
+          <span>{{type}}, </span>
+          <span>{{amount}}€</span>
         </div>
+        </br>
       {{/actors}}
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
