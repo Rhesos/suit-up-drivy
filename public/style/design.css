@@ -1,13 +1,17 @@
 body{
 	height:100%;
 	width: 100%;
-	/*float: left;*/
 	background-color: #E6F6FA;
 	font-family: "resultFont";
 	font-size: 100%;
 }
 
+h2{
+	text-align: center;
+}
+
 #dataContainer, #actors {
+
 	padding: 1%;
 	margin-left: 5%;
 	width: 30%;
@@ -16,10 +20,15 @@ body{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	border: 1px solid #06152d;
+
+	display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #dataContainer {
 	font-family: "askFont";
+	text-align: left;
 }
 
 @font-face {
@@ -35,18 +44,24 @@ body{
 button{
 	font-size: 110%;
 	font-weight: bold;
-	display:block;
 	height: 30px;
 	background-color: #93bcff;
 	border: 1px solid #06152d;
 	color: white;
-	margin-left: 5%;
 	width: 32%;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 	
 button:hover{
 	background-color: #98a6bc;
 	color: white;
+}
+
+.centerize {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 input{

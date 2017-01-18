@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Drivy</title>
-    <link href='style/design.css' rel='stylesheet' type='text/css'/>
-  </head>
-  <body>
-    <h2>Enter the following informations :</h2>
-    <div id="dataContainer">
+<head>
+  <title>CSS/HTML Workshop with Drivy</title>
+  <link href='style/design.css' rel='stylesheet' type='text/css'/>
+</head>
+<body>
+  <h2>Enter the following informations :</h2>
+  <div id="dataContainer">
     <div id="car">
       What is the car model ?<input class="model" type="text" placeholder="Car model"/><br/><br/>
       How much €/pay ?<input class="price-by-day" type="number" placeholder="Price by day"/><br/><br/>
@@ -16,24 +16,26 @@
       When do you rent the car ?<input class="begin" type="date" placeholder="Rental begin date"/><br/><br/>
       When are you done with it ?<input class="end" type="date" placeholder="Rental end date"/><br/><br/>
       How many km did you drive ?<input class="distance" type="number" placeholder="Distance in km"/><br/><br/>
-      Do you take the deductible option ?<input class="option" type="checkbox" placeholder="Deductible option"/></br></br>
+      Do you take the deductible option ?<input class="option" type="checkbox" placeholder="Deductible option"/></br>
     </div>
   </div>
+  <div class="centerize">
     <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script id="template" type="x-tmpl-mustache">
-    </br>
-      {{#actors}}
-        <div class="actor">
-          <span>{{who}} : </span>
-          <span>{{type}}, </span>
-          <span>{{amount}}€</span>
-        </div>
-        </br>
-      {{/actors}}
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
-    <script src="drivy.js"></script>
-    <script src="index.js"></script>
-  </body>
+  </div>
+  <div id="actors"></div>
+  <script id="template" type="x-tmpl-mustache">
+  </br>
+  {{#actors}}
+  <div class="actor">
+  <span>{{who}} : </span>
+  <span>{{type}}, </span>
+  <span>{{amount}}€</span>
+  </div>
+  </br>
+  {{/actors}}
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+  <script src="drivy.js"></script>
+  <script src="index.js"></script>
+</body>
 </html>
